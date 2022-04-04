@@ -2,6 +2,8 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.2"
+gem 'carrierwave', '~> 2.0'
+
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
@@ -70,3 +72,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem "letter_opener", group: :development
